@@ -1,0 +1,43 @@
+TODO — Ama La Mia Landing Page
+Generated: 2026-05-19
+Layout: Layout 1 — Immersive Visual
+========================================
+
+CRITICAL (blocks launch)
+------------------------
+[ ] Configure DNS for custom domain (ama-la-mia.vikaph.com) - Domain access denied (403 error)
+[ ] Add phone number to contact section
+[ ] Add complete address to contact section
+[ ] Add operating hours to contact section
+[ ] Add actual menu prices (currently marked as -)
+
+CONTENT (needs real copy or data)
+----------------------------------
+[ ] Business address: [FILL IN]
+[ ] Phone number: [FILL IN]
+[ ] Hours of operation: [FILL IN]
+[ ] Menu prices: All items marked as -
+[ ] Google Maps reviews: Page was JavaScript-rendered, used skeleton loading bars
+
+IMAGES
+-------
+[ ] Hero image: Using Unsplash fallback (Italian restaurant interior)
+[ ] About image: Using Unsplash fallback (restaurant ambiance)
+[ ] Gallery images: Using Unsplash fallback (Italian food dishes)
+[ ] Note: Web search did not find specific Ama La Mia images
+
+SEO
+----
+[ ] Add actual business address to JSON-LD
+[ ] Add phone number to JSON-LD
+[ ] Add operating hours to JSON-LD
+[ ] Verify Google Maps embed accuracy (Place ID: 0x3397d326285cc5ed:0x5946e664354a046)
+
+ALL DONE ✓
+-----------
+- Project structure created
+- Landing page generated with Layout 1
+- Images downloaded (Unsplash fallback)
+- Deployed to Vercel: https://ama-la-mia.vercel.app
+- GitHub repository created: https://github.com/gabconcepcionph/ama-la-mia
+- Git-based auto-deployment configured
