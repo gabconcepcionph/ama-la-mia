@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ama La Mia | Italian Restaurant in Imus</title>
+  <meta name="description" content="Authentic Italian cuisine in Imus. Experience traditional pasta, pizza, and Italian dishes at Ama La Mia. Call us today." />
+  <meta name="keywords" content="Italian restaurant in Imus, Ama La Mia, pasta restaurant Imus, pizza Imus, Italian cuisine near me" />
+  <link rel="canonical" href="https://ama-la-mia.vikaph.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ama La Mia | Italian Restaurant in Imus" />
+  <meta property="og:description" content="Authentic Italian cuisine in Imus. Experience traditional pasta, pizza, and Italian dishes at Ama La Mia." />
+  <meta property="og:image" content="https://ama-la-mia.vikaph.com/images/hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://ama-la-mia.vikaph.com/" />
+  <meta property="og:locale" content="en_PH" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ama La Mia | Italian Restaurant in Imus" />
+  <meta name="twitter:description" content="Authentic Italian cuisine in Imus. Experience traditional pasta, pizza, and Italian dishes at Ama La Mia." />
+  <meta name="twitter:image" content="https://ama-la-mia.vikaph.com/images/hero.jpg" />
+  <meta name="geo.region" content="PH-CAV" />
+  <meta name="geo.placename" content="Imus" />
+  <meta name="geo.position" content="14.4289043;120.9326537" />
+  <meta name="ICBM" content="14.4289043, 120.9326537" />
+  <script src="https://assets.vikaph.com/tailwindcss-3.4.17.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Colors */
+      --color-primary:   #C41E3A;  /* Main CTA, headings, logo — Italian red for restaurant */
+      --color-secondary: #8B0000;  /* Accents, hover states — darker red for depth */
+      --color-accent:    #FFD700;  /* Highlights, star ratings, badges — gold for premium feel */
+      --color-dark:      #1A1A1A;  /* Body text, footer bg — near black for contrast */
+      --color-light:     #FFF8F0;  /* Page bg, card bg — warm cream for restaurant ambiance */
+      --color-muted:     #6B6B6B;  /* Secondary text, borders — medium gray */
+
+      /* Typography */
+      --font-heading: 'Playfair Display', serif;
+      --font-body:    'Inter', sans-serif;
+      --font-accent:  'Dancing Script', cursive;
+
+      /* Spacing / Shape */
+      --radius-card: 1rem;
+      --radius-btn:  0.5rem;
+      --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    body { font-family: var(--font-body); }
+    h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-[var(--color-light)] text-[var(--color-dark)] overflow-x-hidden">
+
+  <!--
+    LAYOUT: Layout 1 — Immersive Visual
+    SELECTED BECAUSE: Restaurant business with food discovery audience — mood-first, full-bleed photography layout
+    VARIANT REFERENCE: gmaps-landing-page/references/layout-variations.md
+  -->
+
+  <!-- Preview Banner -->
+  <div id="preview-banner" class="fixed top-0 left-0 right-0 bg-[var(--color-dark)] text-white py-2 px-4 text-center z-50 text-sm flex items-center justify-between">
+    <div class="flex-1">
+      <span class="mr-2">🚧 Preview Website</span>
+      <a href="https://www.vikaph.com/" target="_blank" class="text-[var(--color-secondary)] hover:text-[var(--color-primary)] font-semibold underline">
+        Get your website at vikaph.com
+      </a>
+    </div>
+    <button id="close-banner" class="text-white/70 hover:text-white ml-4 text-xl leading-none">&times;</button>
+  </div>
+
+  <!-- Navigation -->
+  <header id="main-nav" class="fixed top-8 w-full z-40 transition-all duration-300 bg-transparent hover:bg-white/90 hover:backdrop-blur-sm hover:border-b hover:border-[var(--color-muted)]/20 hover:shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="font-heading text-2xl font-bold text-[var(--color-primary)]">Ama La Mia</a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#home" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">Home</a>
+        <a href="#about" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">About</a>
+        <a href="#menu" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">Menu</a>
+        <a href="#gallery" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+        <a href="#reviews" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-white hover:text-[var(--color-primary)] transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:block bg-[var(--color-primary)] text-white px-6 py-2 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors">Order Now</a>
+      <button id="mobile-menu-btn" class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm border-t border-[var(--color-muted)]/20">
+      <nav class="flex flex-col px-6 py-4 gap-4">
+        <a href="#home" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Home</a>
+        <a href="#about" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">About</a>
+        <a href="#menu" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Menu</a>
+        <a href="#gallery" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+        <a href="#reviews" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+        <a href="#contact" class="bg-[var(--color-primary)] text-white px-6 py-2 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-center">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-end justify-center overflow-hidden pb-24">
+      <div class="absolute inset-0 z-0">
+        <img src="images/hero.jpg" alt="Ama La Mia Italian Restaurant interior ambiance" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute inset-0 z-10 bg-gradient-to-t from-[var(--color-dark)]/90 via-[var(--color-dark)]/50 to-transparent"></div>
+      <div class="relative z-20 max-w-4xl mx-auto px-6 text-center text-white bg-black/40 rounded-2xl p-8 md:p-12">
+        <p class="font-accent text-[var(--color-accent)] text-xl mb-2">Authentic Italian Cuisine</p>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4">Italian Restaurant in Imus</h1>
+        <p class="text-lg text-white/80 mb-6">Experience the taste of Italy in the heart of Cavite</p>
+        <p class="text-sm text-white/70 mb-8">📍 Imus, Cavite</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#menu" class="bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors">View Menu</a>
+          <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-[var(--radius-btn)] hover:bg-white hover:text-[var(--color-dark)] transition-colors">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-28 px-4 bg-[var(--color-light)]">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+        <div class="md:col-span-3 space-y-6">
+          <p class="font-accent text-[var(--color-primary)] text-xl">Our Story</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-dark)]">Bringing Italy to Imus</h2>
+          <p class="text-base text-[var(--color-muted)] leading-relaxed">
+            Ama La Mia, meaning "Love My" in Italian, is your gateway to authentic Italian cuisine in Imus, Cavite. We bring the rich flavors, traditional recipes, and warm hospitality of Italy to your table.
+          </p>
+          <p class="text-base text-[var(--color-muted)] leading-relaxed">
+            Our kitchen crafts each dish with passion, using time-honored techniques and the finest ingredients to deliver an unforgettable dining experience. From handmade pasta to wood-fired pizzas, every bite tells a story of Italian culinary tradition.
+          </p>
+          <a href="#menu" class="inline-block bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors">Explore Our Menu</a>
+        </div>
+        <div class="md:col-span-2">
+          <img src="images/about.jpg" alt="Ama La Mia restaurant interior" class="w-full h-auto rounded-[var(--radius-card)] shadow-[var(--shadow-card)]" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 md:py-28 px-4 bg-[var(--color-dark)]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="font-accent text-[var(--color-accent)] text-xl mb-2">Our Menu</p>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">Signature Dishes</h2>
+        </div>
+        
+        <div class="flex gap-3 overflow-x-auto pb-4 border-b border-white/20 mb-8" id="menu-tabs">
+          <button class="menu-tab px-6 py-2 rounded-full bg-[var(--color-primary)] text-white whitespace-nowrap font-medium" data-tab="all">All</button>
+          <button class="menu-tab px-6 py-2 rounded-full bg-white/10 text-white whitespace-nowrap font-medium hover:bg-white/20 transition" data-tab="pasta">Pasta</button>
+          <button class="menu-tab px-6 py-2 rounded-full bg-white/10 text-white whitespace-nowrap font-medium hover:bg-white/20 transition" data-tab="pizza">Pizza</button>
+          <button class="menu-tab px-6 py-2 rounded-full bg-white/10 text-white whitespace-nowrap font-medium hover:bg-white/20 transition" data-tab="desserts">Desserts</button>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="menu-items">
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="pasta">
+            <h3 class="font-heading text-xl font-semibold mb-2">Spaghetti Carbonara</h3>
+            <p class="text-white/70 text-sm mb-3">Classic Roman pasta with eggs, cheese, pancetta, and black pepper</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="pasta">
+            <h3 class="font-heading text-xl font-semibold mb-2">Fettuccine Alfredo</h3>
+            <p class="text-white/70 text-sm mb-3">Creamy parmesan sauce with fresh fettuccine pasta</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="pizza">
+            <h3 class="font-heading text-xl font-semibold mb-2">Margherita Pizza</h3>
+            <p class="text-white/70 text-sm mb-3">Fresh mozzarella, tomato sauce, basil, and olive oil</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="pizza">
+            <h3 class="font-heading text-xl font-semibold mb-2">Quattro Formaggi</h3>
+            <p class="text-white/70 text-sm mb-3">Four cheese pizza with mozzarella, gorgonzola, parmesan, and fontina</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="desserts">
+            <h3 class="font-heading text-xl font-semibold mb-2">Tiramisu</h3>
+            <p class="text-white/70 text-sm mb-3">Classic Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+          <div class="menu-item bg-white/10 backdrop-blur rounded-[var(--radius-card)] p-5 text-white" data-category="desserts">
+            <h3 class="font-heading text-xl font-semibold mb-2">Panna Cotta</h3>
+            <p class="text-white/70 text-sm mb-3">Silky vanilla cream dessert with berry compote</p>
+            <p class="text-[var(--color-accent)] font-bold">₱-</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 md:py-28 px-4 bg-[var(--color-light)]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="font-accent text-[var(--color-primary)] text-xl mb-2">Gallery</p>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)]">Our Atmosphere</h2>
+        </div>
+        <div class="columns-2 md:columns-3 gap-3">
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/01.jpg" alt="Italian pasta dish" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/02.jpg" alt="Italian pizza" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/03.jpg" alt="Restaurant interior" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/04.jpg" alt="Italian cuisine" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/05.jpg" alt="Dining experience" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden group relative cursor-pointer">
+            <img src="images/gallery/06.jpg" alt="Italian food presentation" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/30 transition-all"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 md:py-28 px-4 bg-[var(--color-dark)]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-white text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">What Customers Say</h2>
+          <p class="font-body text-lg text-white/70">Reviews from Google Maps</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="h-6 bg-white/20 rounded animate-pulse mb-3"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse w-3/4"></div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="h-6 bg-white/20 rounded animate-pulse mb-3"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse w-3/4"></div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="h-6 bg-white/20 rounded animate-pulse mb-3"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse mb-2"></div>
+            <div class="h-4 bg-white/10 rounded animate-pulse w-3/4"></div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://maps.app.goo.gl/CwHsGajpXpU9R44XA" target="_blank" rel="noopener" class="border border-white text-white px-6 py-3 rounded-[var(--radius-btn)] hover:bg-white hover:text-[var(--color-dark)] transition-colors">
+            Read More Reviews on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 px-4 bg-[var(--color-light)]">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-6">Contact Us</h2>
+            <p class="text-[var(--color-muted)]">Visit us or send us a message. We'd love to hear from you!</p>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[var(--color-primary)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-[var(--color-dark)]">Address</h3>
+                <address class="text-[var(--color-muted)] not-italic">-</address>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[var(--color-primary)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-[var(--color-dark)]">Phone</h3>
+                <a href="tel:-" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">-</a>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[var(--color-primary)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-[var(--color-dark)]">Hours</h3>
+                <p class="text-[var(--color-muted)]">-</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="tel:-" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-center flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              Call Us
+            </a>
+            <a href="https://www.facebook.com/AmaLaMiaOfficial/" target="_blank" rel="noopener" class="bg-[#1877F2] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[#166FE5] transition-colors text-center flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Message on Facebook
+            </a>
+          </div>
+          
+          <a href="https://maps.app.goo.gl/CwHsGajpXpU9R44XA" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:underline">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+            Get Directions on Google Maps
+          </a>
+        </div>
+        
+        <div class="rounded-[var(--radius-card)] overflow-hidden shadow h-80 lg:h-full">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.123456789!2d120.9326537!3d14.4289043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d326285cc5ed:0x5946e664354a046!2sAma+La+Mia!5e0!3m2!1sen!2sph!4v1716144000000" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ama La Mia Location on Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--color-dark)] text-white py-16 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="col-span-2 md:col-span-1">
+        <h3 class="font-heading text-2xl font-bold text-[var(--color-primary)] mb-4">Ama La Mia</h3>
+        <p class="text-white/70 text-sm mb-4">Authentic Italian cuisine in Imus, Cavite</p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/AmaLaMiaOfficial/" target="_blank" rel="noopener" class="text-white/70 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-white/70 text-sm">
+          <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+          <li><a href="#menu" class="hover:text-white transition-colors">Menu</a></li>
+          <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Hours</h4>
+        <p class="text-white/70 text-sm">-</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <p class="text-white/70 text-sm mb-2">📍 Imus, Cavite</p>
+        <p class="text-white/70 text-sm mb-2">📞 -</p>
+        <a href="https://maps.app.goo.gl/CwHsGajpXpU9R44XA" target="_blank" rel="noopener" class="text-[var(--color-primary)] text-sm hover:underline">Get Directions</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center font-body text-sm text-white/40">
+      © 2026 Ama La Mia · All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    // Preview banner close
+    const closeBannerBtn = document.getElementById('close-banner');
+    const previewBanner = document.getElementById('preview-banner');
+    const mainNav = document.getElementById('main-nav');
+    closeBannerBtn.addEventListener('click', () => {
+      previewBanner.classList.add('hidden');
+      mainNav.classList.remove('top-8');
+      mainNav.classList.add('top-0');
+    });
+
+    // Scroll-based navigation color switching
+    const nav = document.getElementById('main-nav');
+    const navLinks = nav.querySelectorAll('nav a:not(.bg-\\[var\\(--color-primary\\)\\])');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        nav.classList.remove('bg-transparent');
+        nav.classList.add('bg-white/90', 'backdrop-blur-sm', 'shadow-sm', 'border-b', 'border-[var(--color-muted)]/20');
+        navLinks.forEach(link => {
+          link.classList.remove('text-white');
+          link.classList.add('text-[var(--color-primary)]');
+        });
+      } else {
+        nav.classList.add('bg-transparent');
+        nav.classList.remove('bg-white/90', 'backdrop-blur-sm', 'shadow-sm', 'border-b', 'border-[var(--color-muted)]/20');
+        navLinks.forEach(link => {
+          link.classList.remove('text-[var(--color-primary)]');
+          link.classList.add('text-white');
+        });
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Menu tab filtering
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        menuTabs.forEach(t => {
+          t.classList.remove('bg-[var(--color-primary)]');
+          t.classList.add('bg-white/10');
+        });
+        tab.classList.remove('bg-white/10');
+        tab.classList.add('bg-[var(--color-primary)]');
+
+        const category = tab.getAttribute('data-tab');
+        menuItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ama La Mia",
+    "description": "Authentic Italian cuisine in Imus, Cavite. Experience traditional pasta, pizza, and Italian dishes.",
+    "url": "https://ama-la-mia.vikaph.com",
+    "telephone": "-",
+    "priceRange": "-",
+    "image": ["https://ama-la-mia.vikaph.com/images/hero.jpg"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "-",
+      "addressLocality": "Imus",
+      "addressRegion": "Cavite",
+      "postalCode": "-",
+      "addressCountry": "PH"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 14.4289043, "longitude": 120.9326537 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "00:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "00:00", "closes": "00:00" }
+    ],
+    "sameAs": ["https://www.facebook.com/AmaLaMiaOfficial/", "https://maps.app.goo.gl/CwHsGajpXpU9R44XA"]
+  }
+  </script>
+</body>
+</html>
